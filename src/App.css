@@ -1,0 +1,353 @@
+@font-face {
+  font-family: "Lato regular";
+  src: url(./assets/font/Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato bold";
+  src: url(./assets/font/Lato/Lato-Bold.ttf);
+}
+
+img {
+  object-fit: cover !important;
+}
+.carousel_api {
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-next,
+  .slick-prev {
+    right: 0 !important;
+    display: none !important;
+  }
+}
+
+.bg {
+  background: #303030;
+}
+.lato_regular {
+  font-family: "Lato regular", sans-serif;
+}
+.lato_bold {
+  font-family: "Lato regular", sans-serif;
+}
+.capital {
+  text-transform: capitalize !important;
+}
+.search * {
+  font-size: 1.3rem !important;
+}
+.ant-input-search-button {
+  display: none !important;
+}
+.ant-input-outlined {
+  border-radius: 10px !important;
+  box-shadow: 0 0 5px #8989896d;
+}
+
+.border_left {
+  border-left: 3px solid orange;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 13vh !important;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: rgb(255, 211, 66);
+}
+
+.menu ul li {
+  position: relative;
+  padding: 0.6rem 0.3rem;
+  letter-spacing: 0.5px;
+}
+.menu > ul > li {
+  height: 100%;
+}
+
+.a {
+  border-bottom: 1px solid #9f9f9f;
+  padding-block: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub_a {
+  border-bottom: 1px solid orange;
+}
+.carousel_like {
+  padding-right: 20px !important;
+  .slick-next,
+  .slick-prev {
+    right: 0 !important;
+    display: none !important;
+  }
+}
+
+.social-icons a {
+  color: rgba(255, 166, 0, 0.678);
+  padding: 13px 1px 8px 1px !important;
+  border-radius: 3px;
+  transition: 0.2s;
+  margin-inline: 3px;
+}
+.color {
+  color: #303030 !important;
+  transition: 0.3s;
+  margin: 0 !important;
+}
+.footer-menu {
+  & .color {
+    font: 500 1.1rem sans-serif;
+    padding-bottom: 3px;
+  }
+}
+.footer-menu .color:hover {
+  border-bottom: 2px solid orange !important;
+}
+.color:hover {
+  color: orange !important;
+}
+
+.social-icons a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+  border-top: 2px solid orange;
+}
+.col-footer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  width: 200px !important;
+}
+
+.carousel_first {
+  .slick-dots {
+    bottom: 15px !important;
+  }
+  .slick-dots li button {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .slick-dots li button::before {
+    font-size: 5px !important; /* Dot boyutunu artırın */
+    color: #f9fefb !important;
+  }
+
+  .slick-dots li.slick-active button::before {
+    border: 2px solid #f9fefb;
+    border-radius: 50%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none !important;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+
+  @keyframes breath {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Sadece aktif slide'daki img öğesine nefes efektini uygulayın */
+  .slide img {
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  .slide.active img {
+    animation: breath 15s infinite;
+  }
+}
+.carousel_brands {
+  .slick-next,
+  .slick-prev {
+    background: #fff !important;
+    z-index: 2;
+    height: 120px;
+    width: 40px;
+  }
+  .slick-next {
+    right: 0 !important;
+  }
+  .slick-prev {
+    left: 0 !important;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: orange !important;
+  }
+}
+
+.center {
+  display: flex !important;
+  justify-content: center;
+  height: 120px;
+  align-items: center !important;
+}
+.center_like {
+  display: flex !important;
+  justify-content: center;
+  margin-left: 10px !important;
+  align-items: center !important;
+}
+
+.navbar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+  display: none;
+}
+
+.navbar-backdrop.active {
+  display: block;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+.b_bottom {
+  border-bottom: 3px solid orange;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+:where(.css-dev-only-do-not-override-3rel02).ant-pagination .ant-pagination-item-active a {
+  color: orange !important;
+}
+.ant-pagination-item,
+.ant-pagination-item-1,
+.ant-pagination-item-active {
+  border-color: orange !important;
+}
+.carusel_details {
+  & .slick-dots {
+    & button::before {
+      display: none !important;
+    }
+  }
+}
+
+.ant-card,
+.ant-card-bordered,
+.css-dev-only-do-not-override-3rel02 {
+  border: none !important;
+}
+input,
+textarea {
+  outline: none !important;
+  border: none;
+}
+.form_item {
+  border: 1px solid rgba(132, 130, 130, 0.152) !important;
+  height: 10vh;
+  padding-left: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+textarea {
+  border: 1px solid rgba(132, 130, 130, 0.152);
+  height: 20vh;
+  width: 100%;
+  padding: 15px !important;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #444 !important;
+  font-weight: 500;
+}
+.dropdown-btn {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .a,
+  .sub_a {
+    border-bottom: 1px solid #9f9f9f;
+  }
+  .menu ul li {
+    padding: 1rem;
+  }
+  .dropdown,
+  .subdropdown {
+    display: none;
+    position: absolute;
+    background-color: #303030;
+    z-index: 1000;
+  }
+  .menu ul li:hover .dropdown,
+  .dropdown-item:hover .subdropdown {
+    display: block;
+  }
+
+  .dropdown {
+    left: -50%;
+    top: 100%;
+  }
+  .subdropdown {
+    left: 100%;
+    top: 0;
+  }
+
+  .dropdown ul,
+  .subdropdown ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .dropdown > ul {
+    padding-top: 15px;
+  }
+
+  .dropdown ul li,
+  .subdropdown ul li {
+    padding-block: 0.3rem;
+    padding-inline: 0.5rem;
+    min-width: 220px;
+    white-space: nowrap;
+  }
+  .dropdown ul li:hover,
+  .subdropdown ul li:hover {
+    transition: 0.1s;
+    border-left: 4px solid orange;
+  }
+  .dropdown ul li:hover > a {
+    color: orange;
+  }
+  .subdropdown ul li:hover a {
+    color: orange;
+  }
+  .carousel_first {
+    .slick-dots li button {
+      width: 20 !important;
+      height: 20px !important;
+    }
+    .slick-dots {
+      bottom: 25px !important;
+    }
+    .slick-dots li button::before {
+      font-size: 9px !important;
+    }
+  }
+}
