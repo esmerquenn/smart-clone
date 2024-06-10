@@ -17,7 +17,7 @@ function ProductShow({ currentPage, handlePageChange, paginatedData, t, PAGE_SIZ
           <CarouselDetails {...{ isBigDesktop, banner1 }} />
         </div>
         <div className="w-full">
-          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-6 md:gap-9">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 md:gap-9">
             {paginatedData.map((item, index) => (
               <Cards key={index} t={t} title={item.title} content={item.content} />
             ))}
